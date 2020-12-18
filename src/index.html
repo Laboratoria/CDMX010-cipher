@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <title>PASS GENERATOR</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <div id="root">
+     <header>
+       <div class="header">
+         <div>
+           <img src="recursos/LOGO CIPHER.png" alt="Pass Generator">
+           <nav>
+             <ul>
+               <li><a href="">¿Cómo funciona?</a></li>
+             </ul>
+           </nav>
+         </div>
+        
+       </div>
+     </header>
+     <main>
+      <!--<h4 class="presentacion">¿Eres quien usa siempre usa la misma contraseña para proteger todas su cuentas y/o aplicaciones?
+       </h4>-->
+     
+       <div class="rowcipher">
+         <div class="columnA">
+           <h3 class="indicaciones">Ingresa la información para tu contraseña:</h3>
+           <input type="text" id="password">
+           <h4 class="indicaciones2"> Elige un número entre 01 - 50:</h4>
+           <input type="number" id="desplazamiento" value="0">
+             <div class="botones">
+               <button type="button" id="cifrar">CIFRAR</button>
+               <button type="button" id="descifrar">DESCIFRAR</button>
+             </div> 
+           <h4 class="indicaciones">Aquí tienes tu contraseña segura: </h4>
+           <p id="password_cifrada"><input type="text"></p>
+            
+         </div>
+       </div>
+      
+      
+       <div>
+         <p></p>
+       </div>
+ 
+      
+         <div class="rowbanner">
+           <div class="column1">
+             <img src="recursos/padlock copia.png" alt="candado" class="icon">
+             <p class="icontext">Toda tu vida en la red podría estar en riesgo</p>
+           </div>
+           <div class="column2">
+             <img src="recursos/password copia.png" alt="contraseña" class="icon">
+             <p class="icontext">Protege tus credenciales a partir de una regla lógica de sustitución de caracteres</p>
+           </div>
+           <div class="column3">
+             <img src="recursos/tiempo-restante copia.png" alt="rapidez" class="icon">
+             <p class="icontext">¡Nunca fue tan sencillo crear contraseñas seguras! </p>
+           </div>
+       </div>
+       <div><p id="como_funciona"><strong>¿Eres quien usa siempre usa la misma contraseña para proteger todas su cuentas y/o aplicaciones?</strong>
+         Es peligroso usar la misma contraseña para todos los sitios. Si tu contraseña se ve involucrada en un pirateo o filtración de datos, toda tu vida en la red podría estar en riesgo.
+         Llegó el momento de que protegas tu información personal con credenciales más robustas.
+         Con <strong class="highlight">PASS GENERATOR</strong> podrás elegir institivamente la información para tu contraseña,
+         como normalmente lo harías, pero esta vez la protegerás a partir de una regla lógica de sustitución de caracteres.
+         ¡No te preocupes! Nosotros lo haremos por ti.<strong> Nunca fue tan sencillo crear contraseñas seguras.</strong></p>
+       </div>
+ 
+     </main>
+    
+     <footer>
+       <div class="rowfooter" style="background-color: rgba(255, 32, 61, 1)";>
+         <div class="columnfooter">
+           <img src="recursos/ISOLOGO CIPHER.png" alt="Pass Generator" class="img_footer">
+         </div>
+         <div class="columnfooter">
+           <ul>
+             <li><a href="">Contacto</li></a>
+             <li>Redes Sociales</li>
+           </ul>
+         </div>
+       </div>
+     </footer>
+    
+  </div>
+   <script src="index.js" type="module"></script>
+ </body>
 </html>
+
