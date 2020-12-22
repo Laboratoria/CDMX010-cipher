@@ -2,13 +2,111 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cifrado César</title> <!--Nombre que aparece en la pestaña del navegador-->
+    <link rel="stylesheet" href="style.css" /> <!--Manda llamar el CSS-->
+    <img src="LogoAppSW.png"> <!--Se coloca el logro de la App -->
   </head>
   <body>
+
+    <!-- Primer pantalla INICIO-->
     <div id="root">
-      <h1>Hello world!</h1>
+     <!--<p><img src="LogoAppSW.png"></p> Se coloca el logro de la App -->
+      <!--<h1><center>"Secret Words"</center></h1>-->
+      <h2><center>¡Bienvenido a la App de mensajería segura!</center></h2>
+      <br/>
+      <p><center> Esta aplicación esta dirigida a todo tipo de usuarios que deseen compartir información "secreta" o simplemente para crear una 
+        conversación interactiva con su grupo de amigos, familia o pareja.</center></p>
+        <br>
+        <h2><center>¿Listo para comenzar? </center></h2>
+        <center><button type="submit" id="comenzar" class="boton">COMENZAR</button></center> 
+        <br>
+    </div> 
+    
+    <!-- Segunda pantalla BIENVENIDA -->
+    <div id="bienvenida"> 
+      <center><h2>¡Bienvenido!</h2></center>
+      <center><h2>Por favor ingresa tú nombre</h2></center>
+      <center><input type ="text" id="inputNombre" placeholder="Nombre" class="cajanombre">
+       <br>
+       <br>
+       </center>
+       <center><button type="button" id="Aceptar" class="boton">ACEPTAR</button></center>
+        <br/>
+    </div> 
+
+    <!-- Tercer pantalla NOMBRE DE USUARIO -->
+    <div id="usuario" > 
+      <center><h2 id="name"></h2></center>  <!--Se le da la bienvenida al usuario con su nombre-->
+      <center><h2>¿Qué deseas hacer?</h2></center>
+    <!--Selecionar botones de cifrar y descifrar -->
+      <center><button id="menuCifrar" type="button" class="boton1">Cifrar</button></center>
+      <br>
+      <center><button id="menuDescifrar" type="button" class="boton1">Descifrar</button></center>
+      <br>
+      <center></center>
     </div>
+
+      <!-- Cuarta pantalla CRIFRAR -->
+    <div id ="opcionCifrado" >
+     <!-- <center><h2> id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
+      <center><h2>Ingresa el mensaje que deseas cifrar</h2></center>
+      <center><h3>Nota: Solo se aceptan letras mayúsculas </h3></center> 
+      <!--<center><p>en este caso no existe la Ñ</p></center>-->
+      <center><textarea type="text" size="80" id="inputMensaje" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
+      <br>
+        
+      <!-- Desplazamiento del cifrado-->
+      <center><h2>Ingresa el número de desplazamiento</h2></center>
+      <center><p><input type="text" id="desplazamiento" class="desplazamiento" size="4"/></p></center><br>
+      
+      <!-- Botón CIFRAR -->
+      <center><button id="cifrar" class="boton1">Cifrar Texto</button></center><br>
+       
+      <!-- Texto o mensaje cifrado -->
+      <center><h2>Su mensaje cifrado es:</h2></center>
+      <center><textarea type="text" size="80" id="mensajeCifrado" class="textarea" rows="10" cols="40" placeholder=" "></textarea></center>
+      <br>
+
+      <!-- Botón LIMPIAR -->
+      <button id="clean" type="button" class="boton1">Limpiar</button>
+
+      <!-- Botón de REGRESAR -->
+      <button id="botonVolver" type="button" class="boton1">Regresar</button>
+      <br>
+  </div>
+    
+
+  <!-- Quinta pantalla DESCRIFRADO -->
+  <div id="opcionDescifrado">
+    <!--<center><h2 id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
+    <center><h2>Ingresa el mensaje que deseas descifrar</h2></center>
+    <center><h3>Nota: Solo se aceptan letras mayúsculas </h3></center> 
+    <center><textarea type="text" size="80" id="inputMensaje2" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
+    <br>
+
+   <!-- Desplazamiento respecto a descifrado-->
+    <center><h2>Ingresa el número de desplazamiento</h2></center>
+    <center><p><input type="text" id="desplazamiento2" class="desplazamiento" size="4"/></p></center>
+    <br>
+
+    <!-- Botón para DESCIFRAR -->
+    <center><button id="descifrar" class="boton">Descifrar</button></center><br>
+    
+    <!-- Texto o mensaje descifrado -->
+    <center><h2>Su mensaje descifrado es:</h2></center>
+    <center><textarea type="text" size="80" id="mensajeDescifrado" class="textarea" rows="10" cols="40" placeholder=" "></textarea></center>
+    <br>
+  
+    <!-- Botón limpiar -->
+    <button id="clean2" type="button" class="boton1">Limpiar</button>
+    
+    <!-- Botón de REGRESAR -->
+    <button id="botonVolver2" type="button" class="boton1">Regresar</button>
+
+    <!-- Botón de SALIR -->
+    <button id="salir" type="button" class="boton1">Salir</button>
+  </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

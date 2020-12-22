@@ -339,3 +339,32 @@ Esta sección está para ayudarte a llevar una guia de lo que vas completando.
 * Cifra/descifra minúsculas
 * Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * Permite usar un `offset` negativo.
+
+
+
+# Cifrado César
+# Secret Words
+
+## Índice
+
+* [1. Problema](#1-problema)
+* [2. Objetivo](#2-objetivo)
+* [3. Tipo de usuario](#2-Tipo-de-usuario)
+* [4. Descripción](#4-descripción)
+* [5. Producto final](#5-prducto-final)
+
+***
+
+## 1. Problema
+Hoy en día vivimos en un mundo donde la manera más fácil de comunicarnos 1:1 o con un grupo de personas cercanas se realiza a través de mensajerías, por ejemplo, Telegram, Messenger, SMS o la más conocida WhatsApp. Las cuales, han ayudado a infinidad de usuarios a compartir sus ideas, fotografías, documentos e información, además de mantenerse en contacto con su grupo de amigos, área laboral o familia, esto sin importar la distancia. Muchas veces, al compartir nuestra información de manera libre, no nos percatanos o se tiene la consciecia de que se está compartiendo información de valor para cada usuario y por alguna mala experiencia esta puede verse afectada, siendo extraída por terceras personas que buscan beneficiarse a través de esta.
+
+## 2. Objetivo
+"Secret Words" tiene como objetivo el poder ayudar a los usuarios a cifrar y descifrar los mensajes que comparten con su grupo social sin importar la mensajería con la que estén trabajando en su momento. El ayudar a cifrar palabras en específico o descifrar cual es el verdadero significado de esa palabra generará mayor seguirdad y confiabilidad de que si en algún momento se encuentran en una situación donde se vean expuestos a que su información compartida este al alcance de una tercer persona, está no pueda obtener beneficio o identificar lo que el usuario compatió en su momento con otra persona.
+
+## 3. Tipo de usuario
+El usuario al que va dirigido este producto esta pensado en en el sector adolescente, dado que son los que más se encuentran vinculados con el mundo de la tecnología, y en muchas ocasiones no se detienen a leer los términos de uso o tienen presente lo que implican los términos de uso y el como al aceptar esto, automáticamente todo lo que comparten se vuelve "propiedad" de esa App, un ejemplo puede ser Facebook, quién ahora ha adquirido Instagram y WhatsApp. Además de que se tiene como finalidad el crear conversciones interactivas con sus amigos, pareja o familia, esto al poder envíar y/o recibir mensajes con palabras secretas, las cuales tienen que ser descifradas por los receptores. 
+
+## 4. Descripción
+Esta App fue planteada como una herramienta de ayuda 
+
+## 5. Producto final

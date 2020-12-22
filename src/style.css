@@ -1,0 +1,123 @@
+/*En esta parte se establce el fondo o imagen con la que se trabajará en toda
+la app*/
+/*body{  
+  background-image: url(img/Fondo.jpg);
+  background-size: cover; /*Para que cubra toda la pagina
+  background-repeat: repeat;
+  background-attachment: fixed;
+  top: 0px;
+  margin: 0px;
+}*/
+
+img{
+  background-image: url(img/LogoAppSW.png);
+  background-color: transparent; /* #ffdd90; Se asigna color de fondo a la imagen*/
+  background-repeat: no-repeat; /*Para que la imagen no se duplique en sí misma*/
+  border:none;
+  /*border-radius: 10px;*/
+  display:block;
+  margin: auto;
+  width: 220px; /*ancho*/
+  height: 200px; /*largo o alto de la imagen*/
+ 
+}
+
+.contenido {
+  /*background: #6b5ebaff;*/
+  border: none;
+  border-radius: 10px;
+  width: 70vw;
+  height: 110vh;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+  margin: 30px 2% 0 0;
+	font-size: 20px;
+}
+
+h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-size: 25px; /*Tamaño de la letra*/
+  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: black;
+}
+
+h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-size: 15px; /*Tamaño de la letra*/
+  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: black;
+}
+
+/*Propiedades el botón de la primer pantalla*/
+.boton{
+    background-color: rgb(9, 216, 243); /*Fondo del botón*/
+    border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
+    margin: 20px 0px;
+    border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*7
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+    font-size: 25px; /*Tamaño de la letra*/
+    font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+    color: white; /*Color de la letra*/
+    cursor: pointer;
+  	cursor: hand; /*Tipo/estilo del cursor*/
+    }
+
+.boton1{
+	background-color: rgb(243, 9, 28);
+	border-radius: 8px;
+  margin: 5px 10px;
+	border: 3px solid rgb(131, 9, 9);
+	
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+  color: white;
+  cursor: pointer;
+	cursor: hand; /*Tipo/estilo del cursor*/
+}
+
+.cajanombre{
+  	/*background-color: transparent;*/
+	border: 2px solid rgb(243, 200, 9);
+	border-radius: 5px;
+	padding: 5px;
+	background-color: rgba(247, 231, 4, 0.459);
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+  text-align: center;
+  width: 400px;
+  height: 30px;
+}
+
+.textarea{
+	background-color: #21c36d;/* rgb(9, 243, 60);*/
+	border-radius: 8px;
+  margin: 5px 10px;
+	border: 3px solid rgb(131, 9, 9);
+	
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 40; /*horizontal*/
+  color: white;
+}
+
+.desplazamiento{
+  font-family:  Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+	font-size: 20px;
+	font-weight: 40;
+  color: black;
+
+  border-radius: 8px;
+  margin: 5px 10px;
+}
