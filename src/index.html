@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <title>Cifrado César</title> <!--Nombre que aparece en la pestaña del navegador-->
     <link rel="stylesheet" href="style.css" /> <!--Manda llamar el CSS-->
-    <img src="LogoAppSW.png"> <!--Se coloca el logro de la App -->
+    
   </head>
   <body>
 
     <!-- Primer pantalla INICIO-->
     <div id="root">
-     <!--<p><img src="LogoAppSW.png"></p> Se coloca el logro de la App -->
+     <img src="img/LogoAppS.png"> <!--Se coloca el logro de la App -->
       <!--<h1><center>"Secret Words"</center></h1>-->
-      <h2><center>¡Bienvenido a la App de mensajería segura!</center></h2>
-      <br/>
-      <p><center> Esta aplicación esta dirigida a todo tipo de usuarios que deseen compartir información "secreta" o simplemente para crear una 
-        conversación interactiva con su grupo de amigos, familia o pareja.</center></p>
-        <br>
+      <h1><center>¡Bienvenido a la App de mensajería segura!</center></h1>
+      <h3><center> Esta aplicación esta dirigida a todo tipo de usuarios que deseen compartir información "secreta" o simplemente para crear una 
+        conversación interactiva con su grupo de amigos, familia o pareja.</center></h3>
+        <h3><center>Instrucciones:<br></center></h3>
+        <h3><center>1. Coloca la palabra a cifrar o descifrar.<br></center></h3>
+        <h3><center>2. Elige el no. de desplazamientos.<br></center></h3>
+        <h3><center>3. Da click en el botón y observa el mensaje.<br></center></h3>
+        <h3><center>4. Regresa al menú principal.<br></center></h3>
         <h2><center>¿Listo para comenzar? </center></h2>
         <center><button type="submit" id="comenzar" class="boton">COMENZAR</button></center> 
         <br>
@@ -24,6 +27,7 @@
     
     <!-- Segunda pantalla BIENVENIDA -->
     <div id="bienvenida"> 
+      <img src="img/LogoAppS.png">
       <center><h2>¡Bienvenido!</h2></center>
       <center><h2>Por favor ingresa tú nombre</h2></center>
       <center><input type ="text" id="inputNombre" placeholder="Nombre" class="cajanombre">
@@ -36,31 +40,31 @@
 
     <!-- Tercer pantalla NOMBRE DE USUARIO -->
     <div id="usuario" > 
+      <img src="img/LogoAppS.png">
       <center><h2 id="name"></h2></center>  <!--Se le da la bienvenida al usuario con su nombre-->
       <center><h2>¿Qué deseas hacer?</h2></center>
     <!--Selecionar botones de cifrar y descifrar -->
       <center><button id="menuCifrar" type="button" class="boton1">Cifrar</button></center>
-      <br>
       <center><button id="menuDescifrar" type="button" class="boton1">Descifrar</button></center>
-      <br>
-      <center></center>
+      <center><button id="Regresar1" type="button" class="boton1">Regresar</button></center>
+      <center><button id="salir" type="button" class="boton1">Salir</button></center>
     </div>
 
       <!-- Cuarta pantalla CRIFRAR -->
     <div id ="opcionCifrado" >
+      <img src="img/LogoAppS.png">
      <!-- <center><h2> id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
       <center><h2>Ingresa el mensaje que deseas cifrar</h2></center>
-      <center><h3>Nota: Solo se aceptan letras mayúsculas </h3></center> 
+      <center><h3>Nota: Solo se aceptan letras mayúsculas y minúsculas.</h3></center> 
       <!--<center><p>en este caso no existe la Ñ</p></center>-->
       <center><textarea type="text" size="80" id="inputMensaje" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
-      <br>
         
       <!-- Desplazamiento del cifrado-->
       <center><h2>Ingresa el número de desplazamiento</h2></center>
-      <center><p><input type="text" id="desplazamiento" class="desplazamiento" size="4"/></p></center><br>
+      <center><p><input type="text" id="desplazamiento" class="desplazamiento" size="4"/></p></center>
       
       <!-- Botón CIFRAR -->
-      <center><button id="cifrar" class="boton1">Cifrar Texto</button></center><br>
+      <center><button id="cifrar" class="boton1">Cifrar Texto</button></center>
        
       <!-- Texto o mensaje cifrado -->
       <center><h2>Su mensaje cifrado es:</h2></center>
@@ -72,25 +76,27 @@
 
       <!-- Botón de REGRESAR -->
       <button id="botonVolver" type="button" class="boton1">Regresar</button>
-      <br>
+
+      <!-- Botón de SALIR -->
+      <button id="salir1" type="button" class="boton1">Salir</button>
   </div>
     
 
   <!-- Quinta pantalla DESCRIFRADO -->
   <div id="opcionDescifrado">
+    <img src="img/LogoAppS.png">
     <!--<center><h2 id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
     <center><h2>Ingresa el mensaje que deseas descifrar</h2></center>
-    <center><h3>Nota: Solo se aceptan letras mayúsculas </h3></center> 
+    <center><h3>Nota: Solo se aceptan letras mayúsculas y minúsculas.</h3></center> 
     <center><textarea type="text" size="80" id="inputMensaje2" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
     <br>
 
    <!-- Desplazamiento respecto a descifrado-->
     <center><h2>Ingresa el número de desplazamiento</h2></center>
     <center><p><input type="text" id="desplazamiento2" class="desplazamiento" size="4"/></p></center>
-    <br>
 
     <!-- Botón para DESCIFRAR -->
-    <center><button id="descifrar" class="boton">Descifrar</button></center><br>
+    <center><button id="descifrar" class="boton">Descifrar</button></center>
     
     <!-- Texto o mensaje descifrado -->
     <center><h2>Su mensaje descifrado es:</h2></center>
@@ -104,7 +110,7 @@
     <button id="botonVolver2" type="button" class="boton1">Regresar</button>
 
     <!-- Botón de SALIR -->
-    <button id="salir" type="button" class="boton1">Salir</button>
+    <button id="salir2" type="button" class="boton1">Salir</button>
   </div>
 
     <script src="index.js" type="module"></script>

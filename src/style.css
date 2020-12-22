@@ -1,23 +1,26 @@
-/*En esta parte se establce el fondo o imagen con la que se trabajará en toda
-la app*/
-/*body{  
-  background-image: url(img/Fondo.jpg);
-  background-size: cover; /*Para que cubra toda la pagina
+/*En esta parte se establce el fondo o imagen con la que se trabajará en toda la app*/
+body{  
+  background-image: url(img/FondoM.jpg);
+  background-size: cover; /*Para que cubra toda la pagina*/
   background-repeat: repeat;
   background-attachment: fixed;
   top: 0px;
   margin: 0px;
-}*/
+
+  
+}
 
 img{
-  background-image: url(img/LogoAppSW.png);
-  background-color: transparent; /* #ffdd90; Se asigna color de fondo a la imagen*/
-  background-repeat: no-repeat; /*Para que la imagen no se duplique en sí misma*/
+  /*background-image: url(img/LogoAppS.png);*/
+  background-color:transparent; /* #ffdd90; Se asigna color de fondo a la imagen*/
+  background-repeat: repeat; /*Para que la imagen no se duplique en sí misma*/
+  background-attachment: fixed;
   border:none;
+  /*border-radius: 100px;*/
   /*border-radius: 10px;*/
   display:block;
   margin: auto;
-  width: 220px; /*ancho*/
+  width: 250px; /*ancho*/
   height: 200px; /*largo o alto de la imagen*/
  
 }
@@ -37,10 +40,11 @@ img{
   text-align: center;
 }
 
-p{
-  text-align: justify;
-  margin: 30px 2% 0 0;
-	font-size: 20px;
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-size: 25px; /*Tamaño de la letra*/
+  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: black;
 }
 
 h2{
@@ -72,17 +76,16 @@ h3{
     }
 
 .boton1{
-	background-color: rgb(243, 9, 28);
-	border-radius: 8px;
-  margin: 5px 10px;
-	border: 3px solid rgb(131, 9, 9);
-	
-	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 25px;
-	font-weight: 400;
-  color: white;
+  background-color: rgb(9, 216, 243); /*Fondo del botón*/
+  border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
+  margin: 20px 0px;
+  border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*7
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-size: 25px; /*Tamaño de la letra*/
+  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: white; /*Color de la letra*/
   cursor: pointer;
-	cursor: hand; /*Tipo/estilo del cursor*/
+  cursor: hand; /*Tipo/estilo del cursor*/
 }
 
 .cajanombre{
@@ -100,10 +103,10 @@ h3{
 }
 
 .textarea{
-	background-color: #21c36d;/* rgb(9, 243, 60);*/
+	background-color: #26dd7c;/* rgb(9, 243, 60);*/
 	border-radius: 8px;
   margin: 5px 10px;
-	border: 3px solid rgb(131, 9, 9);
+	border: 3px solid rgb(9, 131, 29);
 	
 	font-family:  Arial, Helvetica, sans-serif;
 	font-size: 20px;
@@ -117,6 +120,7 @@ h3{
 	font-size: 20px;
 	font-weight: 40;
   color: black;
+  text-align: center;
 
   border-radius: 8px;
   margin: 5px 10px;

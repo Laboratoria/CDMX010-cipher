@@ -26,14 +26,17 @@ document.getElementById('Aceptar').addEventListener('click', function (){
   document.getElementById('opcionCifrado').style.display='none';//none sirve para ocultar pantalla 4
   document.getElementById('opcionDescifrado').style.display='none';//none sirve para ocultar pantalla 5
   document.getElementById('usuario').style.display='block';//block es para visualizar pantalla 3
-
 });
 
 // MENÚ CIFRAR Y DESCIFRAR
 document.getElementById('Aceptar').addEventListener('click', () =>{
-  //Ocultamos la pantalla de bienvenida
+  //Ocultamos la pantalla de bienvenida  
   document.getElementById('bienvenida').style.display='none'; 
 });
+//Opción de SALIR de la app
+/*document.getElementById('salir').addEventListener('click', () =>{
+  window.close();
+});*/
 
 //PANTALLA CIFRAR
 document.getElementById('menuCifrar').addEventListener('click', () =>{
@@ -45,13 +48,22 @@ document.getElementById('menuCifrar').addEventListener('click', () =>{
   document.getElementById('opcionCifrado').style.display='block';//none sirve para ocultar pantalla 4
 });
 
+// BOTÓN Regresar1
+document.getElementById('Regresar1').addEventListener('click', () =>{
+  document.getElementById('root').style.display='none';//none sirve para ocultar la pantalla 1
+  document.getElementById('bienvenida').style.display='';//se muestra pantalla 2
+  document.getElementById('opcionDescifrado').style.display='none';//none sirve para ocultar pantalla 5
+  document.getElementById('opcionCifrado').style.display='none';//none sirve para ocultar pantalla 4
+  document.getElementById('usuario').style.display='none'; //se oculta la pantalla 3
+});
+
 // BOTÓN CIFRAR
 document.getElementById('cifrar').addEventListener('click', function() {
    let string = document.getElementById('inputMensaje').value; //Aquí se almacena el valor  que se ingresa
    let offset = parseInt(document.getElementById('desplazamiento').value);
    let resultado = cipher.encode(string, offset);
    document.getElementById('mensajeCifrado').value = resultado; //se iguala el valor del input y en base a lo que se trabajo en esa funcion aquí se muestra
-});
+  });
 
 //Botón de LIMPIAR para la pantalla de CIFRAR
   document.getElementById('clean').addEventListener('click', () =>{
@@ -62,12 +74,15 @@ document.getElementById('cifrar').addEventListener('click', function() {
 
 //Botón de REGRESAR al MENÚ DE OPCIONES
  document.getElementById('botonVolver').addEventListener('click', () =>{
-  
   document.getElementById('root').style.display='none';//none sirve para ocultar la pantalla 1
   document.getElementById('bienvenida').style.display='none';//none sirve para ocultar pantalla 2
   document.getElementById('opcionDescifrado').style.display='none';//none sirve para ocultar pantalla 5
   document.getElementById('opcionCifrado').style.display='none';//none sirve para ocultar pantalla 4
   document.getElementById('usuario').style.display=''; //se muestra la pantalla 3
+});
+//Opción de SALIR de la app
+document.getElementById('salir1').addEventListener('click', () =>{
+  window.close();
 });
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // PANTALLA DESCIFRAR
@@ -108,7 +123,7 @@ document.getElementById('botonVolver2').addEventListener('click', () =>{
 });
 
 //SALIR
-document.getElementById('salir').addEventListener('click', () =>{
+document.getElementById('salir2').addEventListener('click', () =>{
    window.close();
 });
 
