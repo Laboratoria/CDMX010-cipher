@@ -267,11 +267,11 @@ html{
     top: 55%;*/
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding-top: 80px;
+    padding-top: 0px;
    }
     
     
-   #cifrar, #descifrar{
+   #cifrar, #descifrar, #reload{
     /*position: absolute;
     top: 30%;
     margin: 30px;*/
@@ -295,7 +295,7 @@ html{
     border: 1px solid white;
    }
 
-   #cifrar:hover, #descifrar:hover{
+   #cifrar:hover, #descifrar:hover, #reload:hover{
       background: white;
       color: rgba(236, 0, 31, 0.7);
       border: 1px solid rgba(236, 0, 31, 0.7);
@@ -326,11 +326,11 @@ html{
     text-align: center;
    }
   
-   #desplazamiento{
-      width: 15%;
+   #desplazamiento {
+      width: 20%;
+      margin-bottom: 80px;
       /*margin-left: 120px; */  
    }
-   
     
     
    #password_cifrada{
@@ -366,7 +366,8 @@ html{
    }
     
    .rowfooter{
-    background: rgba(255, 32, 61, 1);
+    background: rgba(255, 32, 61, 0.9); 
+    box-shadow: #a9a9a9 5px 10px 15px !important;
     display: flex;
     flex-direction: row;
     width: 100%;

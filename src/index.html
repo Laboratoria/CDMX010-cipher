@@ -32,20 +32,20 @@
        <div class="rowcipher">
          <div class="columnA">
            <h3 class="indicaciones">Ingresa la información para tu contraseña:</h3>
-           <input type="text" id="password">
+           <input type="text" id="password" placeholder="contraseña">
            <h4 class="indicaciones2"> Elige un número entre 01 - 50:</h4>
-           <input type="number" id="desplazamiento" value="0">
+           <input type="number" id="desplazamiento" placeholder="0" min="0" max="50">
+           
              <div class="botones">
                <button type="button" id="cifrar">CIFRAR</button>
                <button type="button" id="descifrar">DESCIFRAR</button>
+               <button type="button" id="reload">BORRAR</button>
              </div> 
-       <!--<div id="campo_vacio">" " </div>
-       <div id="password_cifrada" class="indicaciones3" hidden>
-           <h4>Aquí tienes tu contraseña segura: </h4>
-           <p class="resultado"></p>-->
+       
            <div id="password_cifrada"></div>
            </div>
            <p id="como_funciona"></p>
+
          </div>
         
         </main></div>
@@ -88,7 +88,7 @@
        
     
      <footer>
-       <div class="rowfooter" style="background-color: rgba(255, 32, 61, 1)">
+       <div class="rowfooter">
          <div class="columnfooter">
            <img src="recursos/LOGO BLANCO SIN FONDO.png" alt="Pass Generator" class="img_footer">
          </div>

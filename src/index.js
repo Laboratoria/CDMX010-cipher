@@ -4,21 +4,13 @@ let password = document.getElementById("password").value;
 let desplazamiento = parseInt(document.getElementById("desplazamiento").value);// para convertir estos valores a número
 let boton = document.getElementById("cifrar");
 let boton2 = document.getElementById("descifrar");
+let boton3 = document.getElementById("reload")
 
 
-//INCIO
 /*boton.addEventListener("click", function(){
-  if (boton == false){
-    document.getElementById("password_cifrada").style.display="none";
-  }
-  else {
-    document.getElementById("password_cifrada").style.display="block";
-  }
-}, true)*/
-boton.addEventListener("click", function(){
   document.getElementById("password_cifrada").hidden = true;
   document.getElementById("campo_vacio").hidden= false;
-}, true);
+}, true);*/
 
 boton.addEventListener("click", function(){
   if (password.length == 0 || isNaN(desplazamiento)) {
@@ -42,8 +34,19 @@ boton2.addEventListener("click", function(){
 
 
 // Limpiar valores
-//document.getElementById("clear"), () => {
-  //document.getElementById("password").value="";
-  //document.getElementById("desplazamiento").value="";
-  //document.getElementById("password_cifrada").value="";
-//}
+boton3.addEventListener("click", () => {
+  document.getElementById("password").value="";
+  document.getElementById("desplazamiento").value="";
+  document.getElementById("password_cifrada").value="";
+}, true)
+
+
+const reload = document.getElementById('reload');
+reload.addEventListener('click', () => { 
+    location.reload();
+});
+
+
+
+//ocultar Input number prueba
+//document.getElementById("prueba").style.display="none";
