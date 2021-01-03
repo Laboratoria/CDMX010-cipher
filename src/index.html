@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <meta charset="utf-8">
+   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
    <title>PASS GENERATOR</title>
    <link rel="stylesheet" href="style.css" />
  </head>
@@ -13,7 +13,7 @@
            <img src="recursos/LOGO CIPHER.png" alt="Pass Generator">
            <nav>
              <ul>
-               <li><a href="">¿Cómo funciona?</a></li>
+               <li class="navbar"><a href="#como_funciona">¿Cómo funciona?</a></li>
              </ul>
            </nav>
          </div>
@@ -23,7 +23,12 @@
      <main>
       <!--<h4 class="presentacion">¿Eres quien usa siempre usa la misma contraseña para proteger todas su cuentas y/o aplicaciones?
        </h4>-->
-     
+       <div>
+        <h1></h1> 
+        <p><strong class="highlight">PASS GENERATOR</strong>  es un cifrador de contraseñas que ayudará a proteger tu vida en la web.<br> Sólo<strong> ingresa la información para tu contraseña y elige un número entre el 1 y el 50. </strong> 
+          <br>¡Nunca fue tan sencillo proteger tus contraseñas!</p>
+       </div>
+
        <div class="rowcipher">
          <div class="columnA">
            <h3 class="indicaciones">Ingresa la información para tu contraseña:</h3>
@@ -34,17 +39,37 @@
                <button type="button" id="cifrar">CIFRAR</button>
                <button type="button" id="descifrar">DESCIFRAR</button>
              </div> 
-           <h4 class="indicaciones">Aquí tienes tu contraseña segura: </h4>
-           <p id="password_cifrada"><input type="text"></p>
-            
+       <!--<div id="campo_vacio">" " </div>
+       <div id="password_cifrada" class="indicaciones3" hidden>
+           <h4>Aquí tienes tu contraseña segura: </h4>
+           <p class="resultado"></p>-->
+           <div id="password_cifrada"></div>
+           </div>
+           <p id="como_funciona"></p>
          </div>
+        
        </div>
-      
-      
        <div>
-         <p></p>
+        <h1></h1> 
+        <p>Con <strong class="highlight">PASS GENERATOR</strong> podrás elegir institivamente la información para tu contraseña,
+        como normalmente lo harías, pero esta vez la protegerás a partir de una regla lógica de sustitución de caracteres. ¡No te preocupes! 
+        Nosotros lo haremos por ti. </p>
        </div>
- 
+
+      <!--<div class="rowbanner">
+          <div class="column1b">
+            <img src="recursos/padlock.png" alt="candado" class="icon">
+            <p class="icontextb">Toda tu vida en la red podría estar en riesgo</p>
+          </div>
+          <div class="column2b">
+            <img src="recursos/password.png" alt="contraseña" class="icon">
+            <p class="icontextb">Protege tus credenciales a partir de una regla lógica de sustitución de caracteres</p>
+          </div>
+          <div class="column3b">
+            <img src="recursos/tiempo-restante.png" alt="rapidez" class="icon">
+            <p class="icontextb">¡Nunca fue tan sencillo crear contraseñas seguras! </p>
+          </div>
+      </div>-->
       
          <div class="rowbanner">
            <div class="column1">
@@ -57,28 +82,29 @@
            </div>
            <div class="column3">
              <img src="recursos/tiempo-restante copia.png" alt="rapidez" class="icon">
-             <p class="icontext">¡Nunca fue tan sencillo crear contraseñas seguras! </p>
+             <p class="icontext">¡Nunca fue tan sencillo proteger tus contraseñas! </p>
            </div>
        </div>
-       <div><p id="como_funciona"><strong>¿Eres quien usa siempre usa la misma contraseña para proteger todas su cuentas y/o aplicaciones?</strong>
-         Es peligroso usar la misma contraseña para todos los sitios. Si tu contraseña se ve involucrada en un pirateo o filtración de datos, toda tu vida en la red podría estar en riesgo.
-         Llegó el momento de que protegas tu información personal con credenciales más robustas.
-         Con <strong class="highlight">PASS GENERATOR</strong> podrás elegir institivamente la información para tu contraseña,
-         como normalmente lo harías, pero esta vez la protegerás a partir de una regla lógica de sustitución de caracteres.
-         ¡No te preocupes! Nosotros lo haremos por ti.<strong> Nunca fue tan sencillo crear contraseñas seguras.</strong></p>
-       </div>
- 
+       
      </main>
     
      <footer>
        <div class="rowfooter" style="background-color: rgba(255, 32, 61, 1)";>
          <div class="columnfooter">
-           <img src="recursos/ISOLOGO CIPHER.png" alt="Pass Generator" class="img_footer">
+           <img src="recursos/LOGO BLANCO SIN FONDO.png" alt="Pass Generator" class="img_footer">
          </div>
          <div class="columnfooter">
            <ul>
-             <li><a href="">Contacto</li></a>
-             <li>Redes Sociales</li>
+             <h6 class="footer">Mapa de navegación</h6>
+             <li class="footerb"><a href="#como_funciona" class="footerb">¿Cómo funciona?</a></li>
+             <li class="footerb">Contacto</li>
+             <li class="social">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+              <!-- <a class="facebook" title="Facebook" href="https://www.facebook.com" target="_blank" rel="noopenner noreferrer">  -->
+             </li>
            </ul>
          </div>
        </div>
