@@ -27,7 +27,7 @@ boton2.addEventListener("click", function(){
    document.getElementById("password_cifrada").innerText = "Los datos que ingresaste no son válidos.";
  } else {
    let passwordCifrada = cipher.decode(desplazamiento, password);
-   document.getElementById("password_cifrada").innerText = passwordCifrada;
+   document.getElementById("password_cifrada").innerText = "Aquí tienes tu contraseña descifrada:\n" + "\n" + passwordCifrada;
    //document.getElementById("password_cifrada").innerText = texto; 
  }
 }, true)
