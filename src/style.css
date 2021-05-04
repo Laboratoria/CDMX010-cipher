@@ -1,37 +1,30 @@
-/*En esta parte se establce el fondo o imagen con la que se trabajará en toda la app*/
 body{  
-  background-image: url(img/FondoM.jpg);
+ /* background-image: url(img/FondoM.jpg);*/
+  background-color: #a8eca5;/*#86fff8*/
   background-size: cover; /*Para que cubra toda la pagina*/
   background-repeat: repeat;
   background-attachment: fixed;
   top: 0px;
   margin: 0px;
-
-  
+  text-align: justify;
 }
 
 img{
-  /*background-image: url(img/LogoAppS.png);*/
   background-color:transparent; /* #ffdd90; Se asigna color de fondo a la imagen*/
   background-repeat: repeat; /*Para que la imagen no se duplique en sí misma*/
   background-attachment: fixed;
   border:none;
-  /*border-radius: 100px;*/
-  /*border-radius: 10px;*/
   display:block;
   margin: auto;
-  width: 250px; /*ancho*/
-  height: 200px; /*largo o alto de la imagen*/
- 
+  width: 220px; /*ancho*/
+  height: 180px; /*largo o alto de la imagen*/
 }
 
 .contenido {
-  /*background: #6b5ebaff;*/
   border: none;
   border-radius: 10px;
   width: 70vw;
   height: 110vh;
-  /*display: flex;*/
   justify-content: center;
   align-items: center;
   max-width: 70rem;
@@ -41,61 +34,148 @@ img{
 }
 
 h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  text-align: center;
   font-size: 25px; /*Tamaño de la letra*/
   font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
   color: black;
 }
 
 h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  text-align: justify;
+  padding:10px;
+  margin-left: 18%;
+  margin-right: 18%;
   font-size: 25px; /*Tamaño de la letra*/
   font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
   color: black;
 }
 
 h3{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
-  font-size: 15px; /*Tamaño de la letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  text-align: center;
+  padding: 10px;
+  margin-left: 18%;
+  margin-right: 18%;
+  font-size: 25px; /*Tamaño de la letra*/
+  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: black;
+}
+
+h4{
+  padding:10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  text-align: center;
+  font-size: 20px; /*Tamaño de la letra*/
   font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
   color: black;
 }
 
+p{
+  background-color:#a2f782;
+  border-radius: 8px;
+  padding:10px;
+  margin-left: 18%;
+  margin-right: 18%;
+  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  text-align: center;
+  font-size: 25px; /*Tamaño de la letra*/
+  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  color: black;
+}
+
+#root{
+  padding:10px;
+  margin-top: 2%;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 3%;
+  background-color:#00dd7e;/*#a8eca5*/
+  border-radius: 8px;
+}
+
+#welcome{
+  padding:10px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  background-color:#00dd7e;/*#a8eca5*/
+  border-radius: 8px;
+}
+
+#user{
+  padding:10px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+  background-color:#00dd7e;/*#a8eca5*/
+  border-radius: 8px;
+  text-align: center;
+}
+
+#optionencode{
+  padding:10px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  background-color:#00dd7e;/*#a8eca5*/
+  border-radius: 8px;
+  text-align: center;
+}
+
+#optiondecode{
+  padding:10px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  background-color:#00dd7e;/*#a8eca5*/
+  border-radius: 8px;
+  text-align: center;
+}
 /*Propiedades el botón de la primer pantalla*/
 .boton{
     background-color: rgb(9, 216, 243); /*Fondo del botón*/
     border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
-    margin: 20px 0px;
-    border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*7
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+    margin: 10px;
+    border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*/
     font-size: 25px; /*Tamaño de la letra*/
     font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
     color: white; /*Color de la letra*/
     cursor: pointer;
-  	cursor: hand; /*Tipo/estilo del cursor*/
+    cursor: hand; /*Tipo/estilo del cursor*/
+    text-align: center;
     }
 
 .boton1{
   background-color: rgb(9, 216, 243); /*Fondo del botón*/
   border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
-  margin: 20px 0px;
-  border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*7
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5%;
+  border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*/
   font-size: 25px; /*Tamaño de la letra*/
   font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
   color: white; /*Color de la letra*/
   cursor: pointer;
   cursor: hand; /*Tipo/estilo del cursor*/
+  width: 12%;
+  height: 4%;
 }
 
 .cajanombre{
-  	/*background-color: transparent;*/
 	border: 2px solid rgb(243, 200, 9);
 	border-radius: 5px;
 	padding: 5px;
 	background-color: rgba(247, 231, 4, 0.459);
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 15px;
+	font-size: 18px; /*Tamaño de la fuente*/
 	color: rgb(0, 0, 0);
   text-align: center;
   width: 400px;
@@ -103,14 +183,15 @@ h3{
 }
 
 .textarea{
-	background-color: #26dd7c;/* rgb(9, 243, 60);*/
+  background-color: #20dab4;
 	border-radius: 8px;
   margin: 5px 10px;
 	border: 3px solid rgb(9, 131, 29);
-	
+
 	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	font-weight: 40; /*horizontal*/
+	font-size: 20px; /*Tamaño de la fuente*/
+  width: 400px;
+  height: 180px;
   color: white;
 }
 
@@ -121,7 +202,5 @@ h3{
 	font-weight: 40;
   color: black;
   text-align: center;
-
-  border-radius: 8px;
   margin: 5px 10px;
 }
