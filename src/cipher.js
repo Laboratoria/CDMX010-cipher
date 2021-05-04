@@ -1,10 +1,9 @@
 const cipher = {
   encode: (offset, string) =>{
-    if (!offset){ //Error por mensaje nulo 
+    if (!offset){ 
     throw new TypeError("No se ha introducido un valor")
   }
     let textencode = "";
-
     for (let i = 0; i < string.length; i++){  
         let ascii = string.charCodeAt(i);
         if (ascii >= 65 && ascii <= 90){
@@ -15,27 +14,23 @@ const cipher = {
         }
         textencode += String.fromCharCode(ascii); 
     }
-    return textencode; //Retorna el texto cifrado de la función Encode
+    return textencode; 
   },
 
-  decode: (offset2,string) =>{
-    if (!offset2) {
+  decode: (offset_two,string) =>{
+    if (!offset_two) {
       throw new TypeError ('No se ha introducido un mensaje');
     }
     let textdecode = '';
-
     for (let i=0; i<string.length; i++){
         let codeAscii = string.charCodeAt(i);
         let formulaAscii;
         if (codeAscii >= 65 && codeAscii <= 90){ 
-            formulaAscii = (codeAscii - 65 - offset2 + 26) % 26 + 65;
+            formulaAscii = (codeAscii - 65 - offset_two + 26) % 26 + 65;
         }
         else if (codeAscii >= 97 && codeAscii <= 122){
-            formulaAscii = (codeAscii - 97 - offset2 + 26) % 26 + 97;
+            formulaAscii = (codeAscii - 97 - offset_two + 26) % 26 + 97;
         }
-//        else {
-//            formulaAscii = codeAscii;
-//        }
         textdecode += String.fromCharCode(formulaAscii);
     }
     return textdecode;
