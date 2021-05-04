@@ -2,94 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cifrado César</title> <!--Nombre que aparece en la pestaña del navegador-->
-    <link rel="stylesheet" href="style.css" /> <!--Manda llamar el CSS-->
+    <title>Cifrado César</title> 
+    <link rel="stylesheet" href="style.css" /> 
     <img src="img/LogoVerde.png">
   </head>
   <body>
-
-    <!-- Primer pantalla INICIO-->
     <div id="root">
-      <!--<h1><center>"Secret Words"</center></h1>-->
       <h1><strong>¡Bienvenido a la App de mensajería segura!</strong></h1>
       <h2>Esta aplicación esta dirigida a todo tipo de usuarios que deseen compartir información "secreta" o simplemente 
-        para crear una conversación interactiva con su grupo de amigos, familia o pareja.</h2>
-        <p>Instrucciones:<br>1. Coloca la palabra a cifrar o descifrar.<br>
-        2. Elige el no. de desplazamientos.<br>3. Da click en el botón y observa el mensaje.<br>
-        4. Regresa al menú principal.</p>
-        <h3>¿Listo para comenzar?</h3>
+          para crear una conversación interactiva con su grupo de amigos, familia o pareja.</h2>
+          <p>Instrucciones:<br>1. Coloca la palabra a cifrar o descifrar.<br>
+          2. Elige el no. de desplazamientos.<br>
+          3. Da click en el botón y observa el mensaje.<br>
+          4. Regresa al menú principal.</p>
+          <h3>¿Listo para comenzar?</h3>
         <center><button type="submit" id="start" class="boton">COMENZAR</button></center> 
         <br>
     </div> 
-    
-    <!-- Segunda pantalla BIENVENIDA -->
     <div id="welcome"> 
       <h3><strong>¡Bienvenido!</strong></h3>
       <h3>Por favor ingresa tú nombre</h3>
       <center><input type ="text" id="inputname" placeholder="Nombre" class="cajanombre"><br><br></center>
       <center><button type="button" id="accept" class="boton">ACEPTAR</button></center><br/>
     </div> 
-
-    <!-- Tercer pantalla NOMBRE DE USUARIO -->
     <div id="user"> 
-      <center><h3><strong id="name"></strong></h3></center>  <!--Se le da la bienvenida al usuario con su nombre-->
+      <center><h3><strong id="name"></strong></h3></center>  
       <center><h3>¿Qué deseas hacer?</h3></center>
-    <!--Selecionar botones de cifrar y descifrar -->
-      <button id="menuencode" type="button" class="boton1">Cifrar</button>
-      <button id="menudecode" type="button" class="boton1">Descifrar</button>
-      <button id="return" type="button" class="boton1">Regresar</button>
-      <button id="exit" type="button" class="boton1">Salir</button>
+      <button id="menuencode" type="button" class="boton_one">Cifrar</button>
+      <button id="menudecode" type="button" class="boton_one">Descifrar</button>
+      <button id="return" type="button" class="boton_one">Regresar</button>
+      <button id="exit" type="button" class="boton_one">Salir</button>
     </div>
-
-      <!-- Cuarta pantalla CRIFRAR -->
     <div id ="optionencode" >
-     <!-- <center><h2> id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
       <h3>Ingresa el mensaje que deseas cifrar</h3>
       <h4>Nota: Solo se aceptan letras mayúsculas y minúsculas.</h4>
       <center><textarea type="text" size="80" id="inputmessage" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
-        
-      <!-- Desplazamiento del cifrado-->
       <h3>Ingresa el número de desplazamiento</h3>
       <center><p1><input type="text" id="desplazamiento" class="desplazamiento" size="4"/></p1></center>     
-      <!-- Botón CIFRAR -->
       <button id="cifrar" class="boton">Cifrar Texto</button>      
-      <!-- Texto o mensaje cifrado -->
       <h3>Su mensaje cifrado es:</h3>
       <center><textarea type="text" size="80" id="mensajeCifrado" class="textarea" rows="10" cols="40" placeholder=" "></textarea></center>
       <br>
-      <!-- Botón LIMPIAR -->
-      <button id="clean" type="button" class="boton1">Limpiar</button>
-      <!-- Botón de REGRESAR -->
-      <button id="return1" type="button" class="boton1">Regresar</button>
-      <!-- Botón de SALIR -->
-      <button id="exit1" type="button" class="boton1">Salir</button>
+      <button id="clean" type="button" class="boton_one">Limpiar</button>
+      <button id="return_one" type="button" class="boton_one">Regresar</button>
+      <button id="exit_one" type="button" class="boton_one">Salir</button>
   </div> 
-
-  <!-- Quinta pantalla DESCRIFRADO -->
   <div id="optiondecode">
     <!--<center><h2 id="name"></h2></center>  Se le da la bienvenida al usuario con su nombre-->
     <h3>Ingresa el mensaje que deseas descifrar</h3>
     <h4>Nota: Solo se aceptan letras mayúsculas y minúsculas.</h4>
-    <center><textarea type="text" size="80" id="inputmessage2" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
+    <center><textarea type="text" size="80" id="inputmessage_two" class="textarea" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></center>
     <br>
-
-   <!-- Desplazamiento respecto a descifrado-->
     <h3>Ingresa el número de desplazamiento</h3>
-    <center><p1><input type="text" id="desplazamiento2" class="desplazamiento" size="4"/></p1></center>
-    <!-- Botón para DESCIFRAR -->
+    <center><p1><input type="text" id="desplazamiento_two" class="desplazamiento" size="4"/></p1></center>
     <button id="descifrar" class="boton">Descifrar</button>  
-    <!-- Texto o mensaje descifrado -->
     <h3>Su mensaje descifrado es:</h3>
     <center><textarea type="text" size="80" id="messagedecode" class="textarea" rows="10" cols="40" placeholder=" "></textarea></center>
     <br>  
-    <!-- Botón limpiar -->
-    <button id="clean2" type="button" class="boton1">Limpiar</button>    
-    <!-- Botón de REGRESAR -->
-    <button id="return2" type="button" class="boton1">Regresar</button>
-    <!-- Botón de SALIR -->
-    <button id="exit2" type="button" class="boton1">Salir</button>
+    <button id="clean_two" type="button" class="boton_one">Limpiar</button>    
+    <button id="return_two" type="button" class="boton_one">Regresar</button>
+    <button id="exit_two" type="button" class="boton_one">Salir</button>
   </div>
-
     <script src="index.js" type="module"></script>
   </body>
 </html>

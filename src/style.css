@@ -1,7 +1,6 @@
 body{  
- /* background-image: url(img/FondoM.jpg);*/
-  background-color: #a8eca5;/*#86fff8*/
-  background-size: cover; /*Para que cubra toda la pagina*/
+  background-color: #a8eca5;
+  background-size: cover; 
   background-repeat: repeat;
   background-attachment: fixed;
   top: 0px;
@@ -10,14 +9,14 @@ body{
 }
 
 img{
-  background-color:transparent; /* #ffdd90; Se asigna color de fondo a la imagen*/
-  background-repeat: repeat; /*Para que la imagen no se duplique en sí misma*/
+  background-color:transparent; 
+  background-repeat: repeat; 
   background-attachment: fixed;
   border:none;
   display:block;
   margin: auto;
-  width: 220px; /*ancho*/
-  height: 180px; /*largo o alto de la imagen*/
+  width: 220px; 
+  height: 180px; 
 }
 
 .contenido {
@@ -34,32 +33,32 @@ img{
 }
 
 h1{
-  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif;
   text-align: center;
-  font-size: 25px; /*Tamaño de la letra*/
-  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  font-size: 25px; 
+  font-weight: 300; 
   color: black;
 }
 
 h2{
-  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; 
   text-align: justify;
   padding:10px;
   margin-left: 18%;
   margin-right: 18%;
-  font-size: 25px; /*Tamaño de la letra*/
-  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  font-size: 25px; 
+  font-weight: 400; 
   color: black;
 }
 
 h3{
-  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; 
   text-align: center;
   padding: 10px;
   margin-left: 18%;
   margin-right: 18%;
-  font-size: 25px; /*Tamaño de la letra*/
-  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  font-size: 25px; 
+  font-weight: 400; 
   color: black;
 }
 
@@ -67,10 +66,10 @@ h4{
   padding:10px;
   margin-left: 25%;
   margin-right: 25%;
-  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; 
   text-align: center;
-  font-size: 20px; /*Tamaño de la letra*/
-  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  font-size: 20px; 
+  font-weight: 300; 
   color: black;
 }
 
@@ -80,10 +79,10 @@ p{
   padding:10px;
   margin-left: 18%;
   margin-right: 18%;
-  font-family: 'Arial Narrow Bold', sans-serif; /*Tipo de letra*/
+  font-family: 'Arial Narrow Bold', sans-serif; 
   text-align: center;
-  font-size: 25px; /*Tamaño de la letra*/
-  font-weight: 300; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
+  font-size: 25px; 
+  font-weight: 300; 
   color: black;
 }
 
@@ -93,7 +92,7 @@ p{
   margin-left: 12%;
   margin-right: 12%;
   margin-bottom: 3%;
-  background-color:#00dd7e;/*#a8eca5*/
+  background-color:#00dd7e;
   border-radius: 8px;
 }
 
@@ -103,7 +102,7 @@ p{
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 3%;
-  background-color:#00dd7e;/*#a8eca5*/
+  background-color:#00dd7e;
   border-radius: 8px;
 }
 
@@ -113,7 +112,7 @@ p{
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 10%;
-  background-color:#00dd7e;/*#a8eca5*/
+  background-color:#00dd7e;
   border-radius: 8px;
   text-align: center;
 }
@@ -124,7 +123,7 @@ p{
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 3%;
-  background-color:#00dd7e;/*#a8eca5*/
+  background-color:#00dd7e;
   border-radius: 8px;
   text-align: center;
 }
@@ -135,36 +134,36 @@ p{
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 3%;
-  background-color:#00dd7e;/*#a8eca5*/
+  background-color:#00dd7e;
   border-radius: 8px;
   text-align: center;
 }
-/*Propiedades el botón de la primer pantalla*/
+
 .boton{
-    background-color: rgb(9, 216, 243); /*Fondo del botón*/
-    border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
+    background-color: rgb(9, 216, 243); 
+    border-radius: 8px; 
     margin: 10px;
-    border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*/
-    font-size: 25px; /*Tamaño de la letra*/
-    font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
-    color: white; /*Color de la letra*/
+    border: 3px solid rgb(251, 255, 0); 
+    font-size: 25px; 
+    font-weight: 400; 
+    color: white; 
     cursor: pointer;
-    cursor: hand; /*Tipo/estilo del cursor*/
+    cursor: hand; 
     text-align: center;
     }
 
-.boton1{
-  background-color: rgb(9, 216, 243); /*Fondo del botón*/
-  border-radius: 8px; /*se asigna un borde o quita las equinas del botón*/
+.boton_one{
+  background-color: rgb(9, 216, 243); 
+  border-radius: 8px; 
   margin: 10px;
   margin-left: 5px;
   margin-right: 5%;
-  border: 3px solid rgb(251, 255, 0); /*Para el borde del botón*/
-  font-size: 25px; /*Tamaño de la letra*/
-  font-weight: 400; /*GROSOR DE LA LETRA VA DE 100 - 900 O BOLD, BOLDER, LIGHT*/
-  color: white; /*Color de la letra*/
+  border: 3px solid rgb(251, 255, 0); 
+  font-size: 25px; 
+  font-weight: 400; 
+  color: white; 
   cursor: pointer;
-  cursor: hand; /*Tipo/estilo del cursor*/
+  cursor: hand; 
   width: 12%;
   height: 4%;
 }
@@ -175,7 +174,7 @@ p{
 	padding: 5px;
 	background-color: rgba(247, 231, 4, 0.459);
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 18px; /*Tamaño de la fuente*/
+	font-size: 18px; 
 	color: rgb(0, 0, 0);
   text-align: center;
   width: 400px;
@@ -187,9 +186,8 @@ p{
 	border-radius: 8px;
   margin: 5px 10px;
 	border: 3px solid rgb(9, 131, 29);
-
 	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 20px; /*Tamaño de la fuente*/
+	font-size: 20px; 
   width: 400px;
   height: 180px;
   color: white;
