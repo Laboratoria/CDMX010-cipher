@@ -6,13 +6,14 @@ const cipher = { // object initializer
    const numeros = "0123456789";
    const especiales = "!\"#$%&'()*+,-./"
    let passwordCifrada = "";
+
    if (password == []) {
-     throw new TypeError ("Contraseña inválida!");
-   } else if (desplazamiento == null){
-     throw new TypeError ("Campo de número vacío!");
-   } else if (password == 0 && desplazamiento == 0){
-     throw new TypeError ("Los campos no son válidos!");
-   }
+    throw new TypeError ("Contraseña inválida!");
+  } else if (desplazamiento == null){
+    throw new TypeError ("Campo de número vacío!");
+  } else if (password == "" && desplazamiento == 0){
+    throw new TypeError ("Algún campo obligatorio está vacío!");
+  }
    
    for(var i = 0; i <= (password.length-1); i++){
      let ascii = password.charCodeAt(i);
@@ -45,12 +46,13 @@ const cipher = { // object initializer
      const numeros = "0123456789";
      const especiales = "!\"#$%&'()*+,-./"
      let passwordDescifrada = "";
+     
      if (password == []) {
        throw new TypeError ("Contraseña inválida!");
      } else if (desplazamiento == null){
        throw new TypeError ("Campo de número vacío!");
      } else if (password == 0 && desplazamiento == 0){
-       throw new TypeError ("Los campos no son válidos!");
+       throw new TypeError ("Algún campo obligatorio está vacío!");
      }
     
    

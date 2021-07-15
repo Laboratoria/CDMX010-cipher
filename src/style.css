@@ -182,7 +182,7 @@ html{
     
     
    .rowbanner {
-    height: 800px;
+    height: 100%;
     position: static;
     margin: 0;
     
@@ -206,7 +206,7 @@ html{
    .column1, .column2, .column3 {
     float: left;
     width: 30%;
-    height: 30%;
+    height: 250px;
     box-shadow:  rgba(58, 38, 155, 0.08) 0px 1px 12px !important;
     display: block;
     margin: 0;
@@ -363,6 +363,17 @@ html{
     margin-right: 50px;
     margin-top: 30px;
     text-align: center;
+   }
+
+   #hexagons{
+      width: 80%;
+      height: 100%;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      display: flex;
+margin: 0px;
+padding: 40px;
+text-align: center;
    }
     
    .rowfooter{

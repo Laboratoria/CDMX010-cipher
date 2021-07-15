@@ -6,15 +6,23 @@ let boton = document.getElementById("cifrar");
 let boton2 = document.getElementById("descifrar");
 let boton3 = document.getElementById("reload")
 
+//creates a listener for when you press a key
+window.onkeyup = keyup;
 
-/*boton.addEventListener("click", function(){
-  document.getElementById("password_cifrada").hidden = true;
-  document.getElementById("campo_vacio").hidden= false;
-}, true);*/
+//creates a global Javascript variable
+var inputTextValue;
+
+function keyup(e) {
+  //setting your input text to the global Javascript Variable for every key press
+  inputTextValue = e.target.value;
+  console.log(inputTextValue);
+}
 
 boton.addEventListener("click", function(){
-  if (password.length == 0 || isNaN(desplazamiento)) {
-   document.getElementById("password_cifrada").innerText = "Los datos que ingresaste no son válidos.";
+  if (password.length == 0 || desplazamiento == 0) {
+   document.getElementById("password_cifrada").innerText = "Algún campo obligatorio está vacío";
+ } else if (isNaN(desplazamiento)){
+  document.getElementById("password_cifrada").innerText = "El campo de número es incorrecto";
  } else {
    let passwordCifrada = cipher.encode(desplazamiento, password);
    document.getElementById("password_cifrada").innerText = "Aquí tienes tu contraseña segura:\n" + "\n" + passwordCifrada;
@@ -23,9 +31,11 @@ boton.addEventListener("click", function(){
 }, true)
  
 boton2.addEventListener("click", function(){
- if (password.length == 0 || isNaN(desplazamiento)) {
-   document.getElementById("password_cifrada").innerText = "Los datos que ingresaste no son válidos.";
- } else {
+  if (password.length == 0 || desplazamiento == 0) {
+    document.getElementById("password_cifrada").innerText = "Algún campo obligatorio está vacío";
+  } else if (isNaN(desplazamiento)){
+   document.getElementById("password_cifrada").innerText = "El campo de número es incorrecto";
+  }else {
    let passwordCifrada = cipher.decode(desplazamiento, password);
    document.getElementById("password_cifrada").innerText = "Aquí tienes tu contraseña descifrada:\n" + "\n" + passwordCifrada;
    //document.getElementById("password_cifrada").innerText = texto; 
@@ -35,18 +45,11 @@ boton2.addEventListener("click", function(){
 
 // Limpiar valores
 boton3.addEventListener("click", () => {
-  document.getElementById("password").value="";
-  document.getElementById("desplazamiento").value="";
-  document.getElementById("password_cifrada").value="";
+  location.reload();
+  document.getElementById("password").value= "";
+  document.getElementById("desplazamiento").value= "";
+  document.getElementById("password_cifrada").value= "";
 }, true)
 
 
-const reload = document.getElementById('reload');
-reload.addEventListener('click', () => { 
-    location.reload();
-});
 
-
-
-//ocultar Input number prueba
-//document.getElementById("prueba").style.display="none";
